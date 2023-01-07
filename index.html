@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        transition: all 2s;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form class="js-form mt-5 mb-3 d-flex justify-content-between">
+        <div class="input-group w-25">
+
+          <input
+          type="text"
+          class="form-control js-input"
+          placeholder="Search country"
+          />
+          <button type="submit" class="btn btn-primary" >
+            Send
+          </button>
+        </div>
+        <select class="js-select form-select w-25">
+          <option value="disabled" disabled selected>Filter</option>
+          <option value="All">All</option>
+          <option value="Africa">Africa</option>
+          <option value="America">America</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+      </form>
+      <div
+        class="js-box d-flex justify-content-between flex-wrap p-0 m-0"
+      ></div>
+    </div>
+
+    <template class="template">
+      <div
+        class="card mt-3"
+        style="width: 18rem"
+      >
+        <img
+          src="..."
+          height="200px"
+          class="card-img-top object-fit-cover"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="popular list-group-item">An item</li>
+          <li class="capital list-group-item">A second item</li>
+          <li class="region list-group-item">A third item</li>
+        </ul>
+      </div>
+    </template>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
